@@ -1,11 +1,9 @@
 const navigations = {
     home: "/",
     menu: "/menu",
-    products: "/our-products",
-    treatments: "/our-treatments",
-    blogs: "/blogs",
-    partners: "/partners",
+    locations: "/locations",
     contact: "/contact",
+    about: "/about-us",
   };
   
   export { navigations };

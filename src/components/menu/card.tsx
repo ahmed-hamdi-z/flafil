@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ title, description, price, imageUrl }) => {
     <div className="bg-[#C8C6AF] shadow-md p-2 flex flex-col items-center text-center max-w-[300px] md:max-w-none -space-y-10 mt-16" >
       <img
         src={imageUrl}
-        alt={title}
+        alt=''
         className="rounded-full w-32 h-32 object-cover relative -mt-20"
       />
       <div className="flex flex-row-reverse items-center  justify-between w-full px-3 pt-10"> 

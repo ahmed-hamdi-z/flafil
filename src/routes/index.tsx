@@ -6,19 +6,19 @@ import Loading from "../pages/loading";
 const NotFound = lazy(() => import("../pages/not-found"));
 const Home = lazy(() => import("../pages/home"));
 const Menu = lazy(() => import("../pages/menu"));
-// const Products = lazy(() => import("../pages/Products"));
-// const Blogs = lazy(() => import("../pages/Blogs"));
-// const Treatments = lazy(() => import("../pages/Treatments"));
+const Locations = lazy(() => import("../pages/locations"));
+const Contact = lazy(() => import("../pages/contact"));
+const About = lazy(() => import("../pages/about"));
 
 export default function Routers() {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path={navigations.home} element={<Home />} />
-       <Route path={navigations.menu} element={<Menu />} />
-       {/*   <Route path={navigations.products} element={<Products />} />
-        <Route path={navigations.blogs} element={<Blogs />} />
-        <Route path={navigations.treatments} element={<Treatments />} /> */}
+        <Route path={navigations.menu} element={<Menu />} />
+        <Route path={navigations.locations} element={<Locations />} />
+        <Route path={navigations.contact} element={<Contact />} />
+        <Route path={navigations.about} element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

@@ -7,56 +7,56 @@ const cardsData = [
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   {
     title: "تاكو بريسكيت",
     description:
       " لحم البريسكيت المدخن - جبنة سويسرية - مايونيز - يقدم مع بطاطس مقلية وصوص التاكو الخاص 558 كالوري",
     price: 29,
-    imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
+    imageUrl: "/images/about-bottom.png", // Replace with actual image URL
   },
   
   // Add more card objects as needed

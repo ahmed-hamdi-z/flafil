@@ -29,25 +29,24 @@ const Logo = () => (
 );
 
 const Links = () => (
-    <div className="hidden items-center space-x-32 gap-2 md:flex">
-        <div className="">
-            <GlassLink text="Products" />
-            <GlassLink text="History" />
-            <GlassLink text="Contact" />
+    <div className="hidden items-center space-x-28 gap-5 md:flex">
+        <div className="flex">
+            <GlassLink text="تواصل معنا" link="/contact" />
+            <GlassLink text="المنيو" link="/menu" />
         </div>
         <Logo />
-        <div className="">
-            <GlassLink text="Products" />
-            <GlassLink text="History" />
-            <GlassLink text="Contact" />
+        <div className="flex ">
+            <GlassLink text="قصتنا" link="/about-us" />
+            <GlassLink text="الرئيسية" link="/" />
+
         </div>
     </div>
 );
 
-const GlassLink = ({ text }: { text: string }) => {
+const GlassLink = ({ text, link }: { text: string; link: string; }) => {
     return (
         <a
-            href="#"
+            href={link}
             className="group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95"
         >
             <span className="relative z-10 text-white/90 transition-colors group-hover:text-white">
@@ -58,9 +57,9 @@ const GlassLink = ({ text }: { text: string }) => {
     );
 };
 
-const TextLink = ({ text }: { text: string }) => {
+const TextLink = ({ text, link }: { text: string; link: string; }) => {
     return (
-        <a href="#" className="text-white/90 transition-colors hover:text-white">
+        <a href={link} className="text-white/90 transition-colors hover:text-white">
             {text}
         </a>
     );
@@ -82,16 +81,7 @@ const Buttons = ({
     </div>
 );
 
-const SignInButton = () => {
-    return (
-        <button className="group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95">
-            <span className="relative z-10 text-white/90 transition-colors group-hover:text-white">
-                Sign in
-            </span>
-            <span className="absolute inset-0 z-0 bg-gradient-to-br from-white/20 to-white/5 opacity-0 transition-opacity group-hover:opacity-100" />
-        </button>
-    );
-};
+
 
 const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
     const [ref, { height }] = useMeasure();
@@ -103,13 +93,13 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
             }}
             className="block overflow-hidden md:hidden"
         >
-            <div ref={ref} className="flex items-center justify-between px-4 pb-4">
-                <div className="flex items-center gap-4">
-                    <TextLink text="Products" />
-                    <TextLink text="History" />
-                    <TextLink text="Contact" />
+            <div ref={ref} className="flex items-center justify-center px-4 pb-4">
+                <div className="flex items-center gap-8">
+                    <TextLink text="تواصل معنا" link="/contact" />
+                    <TextLink text="قصتنا" link="/about-us" />
+                    <TextLink text="الرئيسية" link="/" />
                 </div>
-                <SignInButton />
+
             </div>
         </motion.div>
     );
