@@ -15,7 +15,7 @@ const MenuSection: React.FC = () => {
           <img
             src="/images/meal.png" // Replace with the actual image path
             alt="Falafel Plate"
-            className="w-96 h-auto md:w-96 lg:w-[700px] object-cover"
+            className="w-64 h-auto md:w-96 lg:w-[700px] object-cover"
           />
         </div>
 
