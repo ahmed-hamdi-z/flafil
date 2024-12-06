@@ -65,7 +65,7 @@ const cardsData = [
 const CardGrid: React.FC = () => {
   return (
     <>
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mt-16">
       <h1 className="text-5xl text-[#C8C6AF] my-10">جديدنا</h1>
     <div className=" p-5 mt-10 mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-10 " id="1">
   

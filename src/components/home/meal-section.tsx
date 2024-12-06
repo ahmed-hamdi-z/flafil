@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuSection: React.FC = () => {
   return (
-    <div className="relative h-screen mb-40 ">
+    <div className="relative h-screen  ">
 
       <div className="absolute inset-0 bg-[#1C4233] "></div>
 

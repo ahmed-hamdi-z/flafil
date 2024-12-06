@@ -96,6 +96,7 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
             <div ref={ref} className="flex items-center justify-center px-4 pb-4">
                 <div className="flex items-center gap-8">
                     <TextLink text="تواصل معنا" link="/contact" />
+                    <GlassLink text="المنيو" link="/menu" />
                     <TextLink text="قصتنا" link="/about-us" />
                     <TextLink text="الرئيسية" link="/" />
                 </div>
