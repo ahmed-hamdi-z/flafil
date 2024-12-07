@@ -58,14 +58,6 @@ const GlassLink = ({ text, link }: { text: string; link: string; }) => {
     );
 };
 
-const TextLink = ({ text, link }: { text: string; link: string; }) => {
-    return (
-        <a href={link} className="text-white/90 transition-colors hover:text-white">
-            {text}
-        </a>
-    );
-};
-
 const Buttons = ({
     setMenuOpen,
 }: {
@@ -96,10 +88,10 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
         >
             <div ref={ref} className="flex items-center justify-center px-4 pb-4">
                 <div className="flex items-center gap-8">
-                    <TextLink text="تواصل معنا" link="/contact" />
+                    <GlassLink text="تواصل معنا" link="/contact" />
                     <GlassLink text="المنيو" link="/menu" />
-                    <TextLink text="قصتنا" link="/about-us" />
-                    <TextLink text="الرئيسية" link="/" />
+                    <GlassLink text="قصتنا" link="/about-us" />
+                    <GlassLink text="الرئيسية" link="/" />
                 </div>
 
             </div>
