@@ -86,8 +86,8 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
             }}
             className="block overflow-hidden md:hidden"
         >
-            <div ref={ref} className="flex items-center justify-center px-4 pb-4">
-                <div className="flex items-center gap-4">
+            <div ref={ref} className="flex items-center justify-center px-2 pb-4">
+                <div className="flex items-center ">
                     <GlassLink text="تواصل معنا" link="/contact" />
                     <GlassLink text="المنيو" link="/menu" />
                     <GlassLink text="قصتنا" link="/about-us" />
