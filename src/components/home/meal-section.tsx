@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MenuSection: React.FC = () => {
   return (
@@ -26,9 +27,9 @@ const MenuSection: React.FC = () => {
           <p className="text-2xl md:text-4xl text-[#37594A] font-semibold">
             بأسعار مناسبة
           </p>
-          <button className="bg-gradient-to-t from-[#6b9985] to-[#C8C6AF] text-[#37594A] px-12 py-2 rounded-full text-2xl font-semibold border-b-4 border-[#37594A] ">
+          <Link to='/menu' className="bg-gradient-to-t from-[#6b9985] to-[#C8C6AF] text-[#37594A] px-12 py-2 rounded-full text-2xl font-semibold border-b-4 border-[#37594A] ">
             Menu
-          </button>
+          </Link>
         </div>
       </div>
 
