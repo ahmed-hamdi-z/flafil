@@ -24,8 +24,8 @@ const Nav = () => {
 };
 
 const Logo = () => (
-    <div className="fixed z-50 text-4xl text-white bg-transparent md:left-[50%] md:-translate-x-[180%] mt-16">
-        <img src="./images/logo.svg" alt="" className="w-24 h-24" />
+    <div className="fixed z-50 text-4xl text-white bg-transparent md:left-[50%] md:-translate-x-[180%] -mt-[70px] md:mt-16 ml-5 ">
+        <img src="./images/logo.svg" alt="" className="md:w-24 lg:w-24 w-16 md:h-24 lg:h-24 h-16" />
     </div>
 );
 
@@ -79,6 +79,8 @@ const Buttons = ({
 const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
     const [ref, { height }] = useMeasure();
     return (
+        <>
+         <Logo />
         <motion.div
             initial={false}
             animate={{
@@ -86,6 +88,7 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
             }}
             className="block overflow-hidden md:hidden"
         >
+            
             <div ref={ref} className="flex items-center justify-center px-2 pb-4">
                 <div className="flex items-center ">
                     <GlassLink text="تواصل معنا" link="/contact" />
@@ -95,7 +98,8 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
                 </div>
 
             </div>
-        </motion.div>
+        </motion.div> 
+         </>
     );
 };
 
