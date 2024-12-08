@@ -24,7 +24,7 @@ const Nav = () => {
 };
 
 const Logo = () => (
-    <div className="fixed z-50 text-4xl text-white bg-transparent md:left-[50%] md:-translate-x-[180%] -mt-[70px] md:mt-16 ml-5 ">
+    <div className="fixed z-50 text-4xl text-white bg-transparent md:left-[50%] md:-translate-x-[180%] -mt-[70px] md:mt-16 left-52 ">
         <img src="./images/logo.svg" alt="" className="md:w-24 lg:w-24 w-16 md:h-24 lg:h-24 h-16" />
     </div>
 );
@@ -67,7 +67,7 @@ const Buttons = ({
 
         <button
             onClick={() => setMenuOpen((pv) => !pv)}
-            className="ml-2 block scale-100 text-3xl text-white/90 transition-all hover:scale-105 hover:text-white active:scale-95 md:hidden"
+            className=" block scale-100 text-3xl text-white/90 transition-all hover:scale-105 hover:text-white active:scale-95 md:hidden mr-96 "
         >
             <FiMenu />
         </button>
@@ -89,7 +89,7 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
             className="block overflow-hidden md:hidden"
         >
             
-            <div ref={ref} className="flex items-center justify-center px-2 pb-4">
+            <div ref={ref} className="flex items-center justify-center px-2 pb-4 ">
                 <div className="flex items-center ">
                     <GlassLink text="تواصل معنا" link="/contact" />
                     <GlassLink text="المنيو" link="/menu" />
